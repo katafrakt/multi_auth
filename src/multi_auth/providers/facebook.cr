@@ -80,3 +80,5 @@ class MultiAuth::Provider::Facebook < MultiAuth::Provider
     )
   end
 end
+
+MultiAuth::Providers.register("facebook", MultiAuth::Provider::Facebook)

@@ -104,3 +104,5 @@ class MultiAuth::Provider::Vk < MultiAuth::Provider
     )
   end
 end
+
+MultiAuth::Providers.register("vk", MultiAuth::Provider::Vk)

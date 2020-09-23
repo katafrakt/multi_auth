@@ -115,3 +115,5 @@ class MultiAuth::Provider::Google < MultiAuth::Provider
     user
   end
 end
+
+MultiAuth::Providers.register("google", MultiAuth::Provider::Google)

@@ -72,3 +72,5 @@ class MultiAuth::Provider::Github < MultiAuth::Provider
     )
   end
 end
+
+MultiAuth::Providers.register("github", MultiAuth::Provider::Github)

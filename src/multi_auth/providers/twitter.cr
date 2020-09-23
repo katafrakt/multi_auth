@@ -65,3 +65,5 @@ class MultiAuth::Provider::Twitter < MultiAuth::Provider
     @consumer ||= OAuth::Consumer.new("api.twitter.com", key, secret)
   end
 end
+
+MultiAuth::Providers.register("twitter", MultiAuth::Provider::Twitter)
